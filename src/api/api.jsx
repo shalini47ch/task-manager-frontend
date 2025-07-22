@@ -1,10 +1,11 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:8080',
+  // baseURL: 'http://localhost:8080',
+  baseURL:"https://task-manager-backend-1-1j9f.onrender.com/"
 });
 
-// ✅ Add interceptor to attach JWT automatically
+
 api.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem('token');

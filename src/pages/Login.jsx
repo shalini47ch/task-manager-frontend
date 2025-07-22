@@ -17,7 +17,7 @@ export default function Login() {
     setIsLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:8080/auth/login", {
+      const res = await axios.post("https://task-manager-backend-1-1j9f.onrender.com/auth/login", {
         userName,
         password,
       });
