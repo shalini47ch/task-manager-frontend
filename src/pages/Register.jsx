@@ -12,7 +12,7 @@ export default function Register() {
     e.preventDefault();
     setIsLoading(true);
     try {
-      await api.post('/users/register', { userName, password });
+      await api.post('https://task-manager-backend-1-1j9f.onrender.com/users/register', { userName, password });
       navigate('/');
     } catch {
       alert('Register failed');
